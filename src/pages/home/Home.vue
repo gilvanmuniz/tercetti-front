@@ -1,11 +1,15 @@
 <template>
   <div class="home">
-    <h1 class="text-center">Home</h1>
+    <h1 class="text-center">TERCETTI</h1>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  name: 'Home'
+  name: 'Home',
+  computed: {
+    ...mapState()
+  }
 }
 </script>

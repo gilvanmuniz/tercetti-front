@@ -10,7 +10,7 @@
           <div class="form-group">
             <input
               required
-              type="email"
+              type="text"
               v-model="form.username"
               class="form-control"
               placeholder="E-mail"
