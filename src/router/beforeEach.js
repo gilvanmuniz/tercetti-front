@@ -1,10 +1,10 @@
 import store from '../store'
 export default async (to, from, next) => {
-  document.title = `${to.name} - Senhas`
+  document.title = `${to.name} - Tercetti`
   if (to.name !== 'login' && !store.getters['auth/hasToken']) {
     try {
       await store.dispatch('auth/ActionCheckToken')
-      next({ name: to.name })
+      next({ path: to.path })
     } catch (err) {
       next({ name: 'login' })
     }
