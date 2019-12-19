@@ -6,3 +6,8 @@ export const ActionFindProdutos = ({ commit }) => (
     commit(types.SET_PRODUTOS, res.data)
   })
 )
+export const ActionDeleteProduto = ({ commit }, payload) => (
+  services.produtos.deleteProdutos({ id: payload }).then(res => {
+    commit(types.SET_PRODUTO, res.data)
+  })
+)
