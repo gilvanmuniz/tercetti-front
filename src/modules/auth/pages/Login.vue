@@ -50,12 +50,15 @@
          </div><!--clearfix end-->
          <div class="clearfix grpelem" id="u121-5">
             <!-- content -->
-            <p>
-            Não somos apenas um software de gestão,
-           </p>
-           <p id="frase2">
-             <span id="u121-2">somos uma tecnologia em administração.</span>
-           </p>
+            <div id="detalhe"></div>
+            <div class="frases">
+              <p>
+               Não somos apenas um software de gestão,
+             </p>
+             <p id="frase2">
+                <span id="u121-2"><b>somos uma tecnologia em administração.</b></span>
+             </p>
+            </div>
          </div><!--clearfix end-->
       </div><!--texto class end -->
 
@@ -95,11 +98,11 @@ export default {
 
 <style scoped lang="scss">
 .envolucro {
-  background-image: url("../../../assets/images/25060.jpg");
+  background-image: url("../../../assets/images/image1.jpg");
   background-size: 100%;
-  background-position: center;
+  background-position:center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   .login-page {
     height: 100vh;
     display: flex;
@@ -109,8 +112,8 @@ export default {
     .acesseLogin{
       display: flex;
       align-items: center;
-      margin-top:-1%;
-      margin-bottom: 10%;
+      margin-top:-4%;
+      margin-bottom: 16%;
       float: right;
       margin-left: 75%;
     }
@@ -133,8 +136,8 @@ export default {
     }
     form {
       display: flex;
-      margin-top: -20%;
-      margin-bottom:10%;
+      margin-top: -30%;
+      margin-bottom:16%;
       margin-right: -50%;
       margin-left:35%;
       input{ height: 28px;}
@@ -157,6 +160,7 @@ export default {
       display: flex;
       justify-content: center;
       width: 70%;
+      margin-top: 7%;
       .clip_frame{
         margin-left:5%;
         margin-right:-4%;
@@ -165,14 +169,29 @@ export default {
          }
       }
       .texto {
+             margin-top: -5.5%;
              color: white;
              #frase2{
                margin-top: -5%;
              }
+             #u121-5{
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+            }
+            #detalhe{
+              background-color: white;
+              height: 30px;
+              width: 4px;
+              margin-right: 7px;
+              margin-top: -4%;
+            }
          }
     }
     h4{
       color: white;
+      font-weight: 900;
+      font-size: 20px;
     }
   }
 }
